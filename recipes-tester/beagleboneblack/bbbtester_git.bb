@@ -12,4 +12,5 @@ S = "${WORKDIR}/git"
 
 inherit autotools
 
+RDEPENDS_${PN} = "bash"
 RRECOMMENDS_${PN} += "kernel-devicetree-overlays"
