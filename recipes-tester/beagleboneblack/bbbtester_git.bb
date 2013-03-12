@@ -1,12 +1,12 @@
 DESCRIPTION = "BeagleBoneBlack Factory Tester userspace portion"
 
 LICENSE = "All rights reserved"
-LIC_FILES_CHKSUM = "file://bbtester.c;md5=ea227677cebb479672f858d88438b686"
+LIC_FILES_CHKSUM = "file://autogen.sh;md5=434f985d83d84873d91f4d5ba2490916"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh"
-SRCREV = "0dbad71b26aaac31ec145eb82753a8ac1702e257"
+SRCREV = "b50760ad80c6c9ef5c1bc548a863fae188c32bac"
 
-PV = "0.0"
+PV = "0.0.1"
 
 S = "${WORKDIR}/git"
 
