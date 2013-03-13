@@ -4,7 +4,7 @@ LICENSE = "All rights reserved"
 LIC_FILES_CHKSUM = "file://autogen.sh;md5=434f985d83d84873d91f4d5ba2490916"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh"
-SRCREV = "971bcb722e063c1372958a653b9eb6e2ef380da7"
+SRCREV = "d7b79c2717c2de3157618d4bd8771687c4ace37d"
 
 PV = "0.0.1"
 
