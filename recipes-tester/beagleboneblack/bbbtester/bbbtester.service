@@ -1,0 +1,11 @@
+[Unit]
+Description=BeagleBoneBlack Tester
+
+[Service]
+Restart=always
+RestartSec=2
+ExecStart=/usr/bin/bbtester
+Type=simple
+
+[Install]
+WantedBy=basic.target
