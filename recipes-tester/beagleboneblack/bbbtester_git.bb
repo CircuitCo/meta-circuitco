@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://autogen.sh;md5=434f985d83d84873d91f4d5ba2490916"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh \
            file://bbbtester.service"
-SRCREV = "e0353cd246eeb3298e4cbe8a77ba239c051ec52a"
+SRCREV = "b1296828f7c29a514c6a6586b24c0e1406566e3c"
 
 PV = "0.0.1"
 
