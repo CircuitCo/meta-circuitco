@@ -7,17 +7,13 @@ DEPENDS = "libusb1"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh \
            file://bbbtester.service"
-SRCREV = "351d6fff554a5d1e1d79991b3160b68c8f5527f0"
+SRCREV = "ae4879be4d8e6436b3b3016e1c82d2ac4368d0d1"
 
 PV = "0.0.1"
 
 S = "${WORKDIR}/git"
 
 inherit autotools systemd
-
-do_configure_prepend() {
-	sed -i -e s:-Werror::g Makefile.am
-}
 
 do_install_append() {
 	install -d ${D}${base_libdir}/systemd/system
