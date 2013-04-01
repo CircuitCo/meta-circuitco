@@ -7,7 +7,7 @@ DEPENDS = "libusb1"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh \
            file://bbbtester.service"
-SRCREV = "ad22423ccf4547fc817f457163e4018bba1b6cbf"
+SRCREV = "ef9db8c70b588e9713d92228e0d8bd66f86b8028"
 
 PV = "0.0.1"
 
@@ -24,5 +24,5 @@ NATIVE_SYSTEMD_SUPPORT = "1"
 SYSTEMD_PACKAGES = "${PN}"
 SYSTEMD_SERVICE_${PN} = "bbbtester.service"
 
-RDEPENDS_${PN} = "bash"
+RDEPENDS_${PN} = "bash fb-test"
 RRECOMMENDS_${PN} += "kernel-devicetree-overlays"
