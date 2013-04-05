@@ -21,6 +21,18 @@ IMAGE_INSTALL += " \
 	bc \
 	kernel-modules \
 	${EXTRA_MACHINE_IMAGE_INSTALL} \
+	ntpdate \	
+	ntpdate-systemd \
+	util-linux-fdisk \
+	dosfstools \
+	parted \
 "
 
 export IMAGE_BASENAME = "BBB-tester-master-image"
+
+add_tester_fstab() {
+	install -d ${IMAGE_ROOTFS}/media/testerlogs
+	echo "/dev/mmcblk0p3       /media/testerlogs    vfat       defaults              0  0" >> ${IMAGE_ROOTFS}${sysconfdir}/fstab
+}
+
+ROOTFS_POSTPROCESS_COMMAND += "add_tester_fstab ; "
