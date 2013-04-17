@@ -7,7 +7,7 @@ DEPENDS = "libusb1"
 
 SRC_URI = "git://git@github.com/CircuitCo/BeagleBoneBlackTester.git;protocol=ssh \
            file://bbbtester.service"
-SRCREV = "c563bdcac552e3d7630e0667fbd5aac29f45fdbc"
+SRCREV = "8f7218378c4ceba38457ad667ef937d8b7310cce"
 
 PV = "0.3"
 
